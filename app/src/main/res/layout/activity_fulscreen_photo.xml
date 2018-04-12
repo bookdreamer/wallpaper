@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/activity_photo_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/transparent"
+        android:padding="@dimen/default_padding" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activity_photo_user_avatar"
+            android:layout_width="@dimen/photo_avatar_size"
+            android:layout_height="@dimen/photo_avatar_size"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/activity_photo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginStart="@dimen/default_padding"  />
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/activity_photo_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorAccent" >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activity_photo_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_label="@string/fab_option_favorite"
+            app:fab_colorNormal="@color/colorAccent"
+            android:src="@drawable/ic_action_like" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activity_photo_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_label="@string/fab_option_wallpaper"
+            app:fab_colorNormal="@color/colorAccent"
+            android:src="@drawable/ic_action_wallpaper" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

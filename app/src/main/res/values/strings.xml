@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="collection_total_photos">%d photos</string>
+
+    <string name="fab_option_favorite">Favorite</string>
+    <string name="fab_option_wallpaper">Wallpaper</string>
+    <string name="collections_title">Collections</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="wallpaper_success">Set wallpaper successfully</string>
+    <string name="wallpaper_failed">Error on setting wallpaper</string>
+
+    <string name="favorite_added">Added to favorites</string>
+    <string name="favorite_removed">Remove from favorites</string>
+    <string name="no_favorites">You haven\'t liked any photos yet.\nGo and save a couple!</string>
+
+    <string name="nav_bar_title">Wallpaper</string>
+    <string name="nav_bar_subtitle">Nice beautiful app</string>
+</resources>
